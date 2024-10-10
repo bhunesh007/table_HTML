@@ -1,10 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Form</title>
-</head>
-<body>
-    <h1>A dropdown menu</h1>
-    
-</body>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form action="post">
+      <label for="feedback-type">Feedback Type:</label>
+      <select id="feedback-type" name="feedback-type">
+        <option value="complaint">Complaint</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="inquiry">Inquiry</option>
+        <option value="other">Other</option>
+      </select>
+      <br /><br />
+      <label>Your message:</label>
+      <br /><br />
+      <textarea rows="4" cols="50">
+            A textarea for user message.
+        </textarea
+      >
+      <br /><br />
+      <label for="rating">Website Rating:</label>
+      <input type="radio" id="rating-1" name="rating" value="1" />
+      <label for="rating-1">1</label>
+      <input type="radio" id="rating-2" name="rating" value="2" />
+      <label for="rating-2">2</label>
+      <input type="radio" id="rating-3" name="rating" value="3" />
+      <label for="rating-3">3</label>
+      <input type="radio" id="rating-4" name="rating" value="4" />
+      <label for="rating-4">4</label>
+      <input type="radio" id="rating-5" name="rating" value="5" />
+      <label for="rating-5">5</label><br /><br />
+      <br />
+      <label for="age">Your Age:</label>
+      <input type="number" name="Age" min="10" max="100" />
+      <br /><br />
+      <!--Email input-->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      />
+      <br /><br />
+      <label for="website">Your Website (optional):</label>
+      <input type="url" id="website" name="website" /><br /><br />
+      <!-- Checkbox for terms and conditions -->
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">I agree to the terms and conditions</label><br /><br />
+
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
